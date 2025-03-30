@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box; /* Для упрощения расчётов размеров */
+}
+
+.box {
+    border: 1px solid black;
+    width: 300px;
+    margin: 0 auto; /* Выравнивание блока по центру экрана */
+    padding: 20px;
+    display: flex; /* Позволяет управлять расположением его дочерних элементов с помощью Flexbox
+    Дочерние эл-ты выстраиваются в ряд */
+    align-items: center; /*  Центрирует по горизонтали (если column) эл-ы внутри контейнера*/
+    flex-direction: column; /* Элементы в колонку. По умолчанию стоит row (горизонтально)*/
+    gap: 5px; /* Отступы между элементами по вертикали, т.к column-режим 
+    Аналог margin, но только между элементами (не по краям контейнера).*/
+}
+
+.check {
+    background-color: green;
+    color: white;
+    border: unset;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.template {
+   text-align: center;  /* Выравнивание текста по середине */
+}
+
